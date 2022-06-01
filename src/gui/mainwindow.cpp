@@ -1940,7 +1940,7 @@ void MainWindow::handleUpdateCheckFinished(ProgramUpdater *updater, const bool i
             m_programUpdateTimer->start();
         updater->deleteLater();
     };
-        if (invokedByUser)
+    if (invokedByUser)
         {
             auto *msgBox = new QMessageBox {QMessageBox::Information, u"qBittorrent"_qs
                 , tr("No updates available.\nYou are already using the latest version.")
@@ -1954,7 +1954,6 @@ void MainWindow::handleUpdateCheckFinished(ProgramUpdater *updater, const bool i
         {
             cleanup();
         }
-    }
 }
 #endif
 
