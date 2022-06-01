@@ -1940,9 +1940,7 @@ void MainWindow::handleUpdateCheckFinished(ProgramUpdater *updater, const bool i
             m_programUpdateTimer->start();
         updater->deleteLater();
     };
-
-    const QString newVersion = updater->getNewVersion();
-    if (!newVersion.isEmpty())
+    if (false)
     {
         const QString msg {tr("A new version is available.") + u"<br/>"
             + tr("Do you want to download %1?").arg(newVersion) + u"<br/><br/>"
